@@ -18,11 +18,12 @@ O design segue um estilo **minimalista** com paleta de cores quentes e suporte n
 ## ✨ Funcionalidades
 
 * **📝 CRUD Completo:** Criação, Leitura, Edição e Exclusão de recados.
-* **⭐ Sistema de Favoritos:** Ao favoritar um recado, ele recebe destaque visual (borda amarela e estrela preenchida) e é priorizado na lista.
+* **⭐ Sistema de Favoritos:** Ao favoritar um recado, ele recebe destaque visual (estrela preenchida) e é priorizado na lista.
 * **🌙 Modo Noturno (Dark Mode):** Alternância de tema com persistência local (salvo no navegador).
 * **🔄 Atualização em Tempo Real:** A interface reage instantaneamente às ações do usuário (Optimistic UI).
 * **📱 Responsividade:** Layout flexível que se adapta a diferentes tamanhos de tela.
 * **🛡️ Segurança:** Prevenção contra SQL Injection (uso de PDO e Prepared Statements) e XSS.
+* **📝 Post its estilizados:** Simulação de um mural/quadro de recados real com post its coloridos e variados que podem ser arrastados para organização.
 
 ---
 
@@ -43,4 +44,5 @@ O design segue um estilo **minimalista** com paleta de cores quentes e suporte n
 ## 📂 Estrutura de Arquivos
 
 O projeto foi organizado seguindo boas práticas de separação de responsabilidades:
+
 
