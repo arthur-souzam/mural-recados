@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Recados</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header>
+        <h1><i class="ph-fill ph-push-pin"></i> Mural de Recados</h1>
+        <button id="btnToggleTema" title="Mudar tema">
+            <i class="ph-fill ph-sun"></i>
+            <i class="ph-fill ph-moon"></i>
+        </button>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Novo Recado</h2>
+            <form id="recadoForm">
+                <input type="hidden" id="recadoId" name="id">
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-botoes">
+                    <button type="submit" id="btnSalvar">
+                        <i class="ph-fill ph-check"></i> Salvar
+                    </button>
+                    <button type="button" id="btnCancelar" class="hidden">
+                        <i class="ph-fill ph-x"></i> Cancelar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="mural-container">
+            <h2>Recados</h2>
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Atualizando recados...</p>
+            </div>
+            
+            <div id="muralRecados">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 - Arthur Souza Mendes</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
